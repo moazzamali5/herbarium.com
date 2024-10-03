@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="description" content="Assingment 1: Herbi Herbarium (contribute.html)">
+	<meta name="keyword" content="Herbi Herbarium">
+	<meta name="author" content="Jit Heng BOON, Kelly LIEW">
+	<title>Contribution</title>
+	<link rel="stylesheet" href="style.css">
+</head>  
+
+
+
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo" title="Herbi"></a></div> 
+
+          <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li class="dropdown">
+                  <a href="#">Plant Classification</a>
+              </li>
+              
+              <li class="dropdown">
+                  <a href="./tutorial.html">Tutorial</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./tutorial.html">Tutorial</a></li>
+                      <li><a href="./tools.html">Tools</a></li>
+                      <li><a href="./care.html">Care</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Identity</a></li>
+              <li><a href="./contribute.html">Contribution</a></li>
+              <li><a href="#">Enquiry</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Drop menu1</a></li>
+                    <li><a href="#">Drop menu2</a></li>
+                    <li><a href="#">Drop menu3</a></li>
+                </ul>
+            </li>
+              <li><a href="#">Register</a></li>
+              <li><a href="./group_member.html">About Us</a></li>
+          </ul>
+      </nav>
+      <p id="top">.</p>
+    <div class="main">
+        <section class="contribute">
+            <h1>Contribution Form</h1>
+            <p>Would you like to contribute with us? Let's fill this form below.</p>
+            <br>
+            <form method="post" action="mailto:contribute@herbi.com" class="contribute-form">
+                <p id="fill-required">*All information must be fill</p>
+            <fieldset>
+                <legend>Plant Details</legend>
+                <p>
+                    <label for="plantname">Plant Name</label>
+                    <input type="text" name="plantname" id="plantname" maxlength="25" required="required" placeholder="Enter plant name">
+                </p>
+                <p>
+                    <label for="plantfamily" >Plant Family</label>
+                    <select name="plantfamily" id="plantfamily" required="required">
+                        <option value="dipterocarpaceae">Dipterocarpaceae</option>
+                        <option value="lauraceae">Lauraceae</option>
+                        <option value="burseraceae">Burseraceae</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="plantgenus">Plant Genus</label>
+                    <select name="plantgenus" id="plantgenus" required="required">
+                        <option value="vatica">Vatica</option>
+                        <option value="dipterocarpus">Dipterocarpus</option>
+                        <option value="hopea">Hopea</option>
+                        <option value="actinodaphne">Actinodaphne</option>
+                        <option value="endiandra">Endiandra</option>
+                        <option value="beilschmiedia">Beilschmiedia</option>
+                        <option value="canarium">Canarium</option>
+                        <option value="dacryodes">Dacryodes</option>
+                        <option value="santiria">Santiria</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="plantspecies">Plant Species</label>
+                    <select name="plantspecies" id="plantspecies" required="required">
+                        <option value="#">Don't know</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Photos Upload</legend>
+                <p id="photo-instruction">You allow to submit multiple photos</p>
+                <p>
+                    <a id="background">Upload Fresh Leaf Photos</a>
+                    <label for="freshleaf" id="upload">📤 Upload Here</label>
+                    <input type="file" id="freshleaf" multiple required="required">
+                </p>
+                <p>
+                    <a id="background">Upload Herbarium Photos</a>
+                    <label for="herbarium" id="upload">📤 Upload Here</label>
+                    <input type="file" id="herbarium" multiple required="required">
+                </p>
+            </fieldset>
+            <p id="no-background">
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset" id="reset">
+            </p>
+            </form>
+        </section>
+
+
+        <a href="#top" class="back-to-top">🔝</a>
+    </div>
+
+    <footer class="footer">
+        
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="./group_member.html">about us</a></li>
+                        <li><a href="#">our service</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FQA</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="./image/facebook-removebg-preview.png" class="facebook"></a>
+                        <a href="#"><img src="./images/twitter.png" class="twitter"></a>
+                        <a href="#"><img src="./images/instagram.png" class="instagram"></a>
+                        <a href="#"><img src="./images/linkedin.png" class="linkedin"></a>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="footer-col" id="acknowledgement">
+                    <h4>Acknowledgement</h4>
+                    <ul>
+                        <li><a href=""> </a></li>
+                    </ul>
+        </div>
+        </div>
+
+        <hr>
+        <br>
+
+        <p>Copyright &#169; 2024 Herbi Inc. All rights reserved.</p>
+        
+        <br>
+    </div>
+
+</footer>
+</body>
+</html>
